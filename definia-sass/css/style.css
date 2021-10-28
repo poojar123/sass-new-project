@@ -1,0 +1,220 @@
+@font-face {
+  font-family: iciel-gotham-medium-regular;
+  src: url(../fonts/iciel-gotham-medium-regular.otf);
+  font-weight: normal; }
+
+body {
+  font-family: iciel-gotham-medium-regular; }
+
+a, a:hover {
+  text-decoration: none; }
+
+body {
+  color: #242628; }
+
+p {
+  line-height: 25px; }
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 12px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.header_area .container {
+  max-width: 1240px; }
+
+.about-content h6 {
+  font-size: 12px;
+  color: #96EAE0; }
+
+.about-content h2 {
+  font-size: 24px;
+  margin-bottom: 4%; }
+
+.about-content p {
+  font-size: 12px; }
+
+.about-content a {
+  font-size: 12px;
+  background-color: #96EAE0;
+  border: none;
+  color: #242628;
+  padding: 10px 20px; }
+  .about-content a:hover {
+    background-color: transparent;
+    border: 1px solid #96EAE0;
+    color: #242628; }
+
+.about-sec, .team-sec, .profile-sec {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.overlay-content {
+  background-color: rgba(36, 38, 40, 0.9);
+  padding: 40px;
+  margin-top: -27%; }
+  .overlay-content h6 {
+    font-size: 12px;
+    color: #96EAE0; }
+  .overlay-content h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px; }
+  .overlay-content p {
+    font-size: 12px;
+    color: #fff; }
+
+.bg-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/about-slider-img.png);
+  height: 435px; }
+
+.member h4 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 25px;
+  margin-bottom: 0px; }
+
+.member span {
+  font-size: 10px;
+  color: #96EAE0;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.member p {
+  font-size: 14px;
+  margin-top: 25px; }
+
+.member a {
+  font-size: 12px;
+  color: #96EAE0;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.arrow-btn {
+  background-color: #96EAE0;
+  border-radius: 0px; }
+  .arrow-btn i {
+    color: #000; }
+
+.profile-img {
+  margin-top: -170px; }
+
+.member-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .member-row ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0px; }
+  .member-row a {
+    border-right: 1px solid #707070;
+    padding: 0px 15px; }
+  .member-row h4 {
+    font-size: 24px; }
+
+.banner-content {
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .banner-content h1 {
+    font-size: 60px;
+    color: #fff; }
+  .banner-content p {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 8%; }
+
+.service-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5%; }
+  .service-box span {
+    font-size: 20px;
+    line-height: 22px;
+    color: #fff; }
+  .service-box p {
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 0px; }
+  .service-box img {
+    margin-right: 10px; }
+
+.service-content .active span {
+  color: #96EAE0; }
+
+.service-content .active p {
+  color: #96EAE0; }
+
+.hide-img {
+  visibility: hidden; }
+
+.slider-img .left-col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.slider-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/header.png); }
+
+.no-border {
+  border-right: none !important; }
+
+.mob-slider {
+  display: none; }
+
+.desktop-slider {
+  padding: 50px 0px; }
+  .desktop-slider hr {
+    border: 1px solid #fff; }
+
+.img-section {
+  padding-bottom: 100px; }
+
+/*Responsive start*/
+@media (max-width: 767px) {
+  .profile-img {
+    margin-top: 25px; }
+  .desktop-slider {
+    display: none; }
+  .mob-slider {
+    display: block; }
+    .mob-slider span {
+      color: #000; }
+    .mob-slider img {
+      margin-right: 31px;
+      width: 10%; }
+    .mob-slider .right-icon {
+      position: absolute;
+      right: 15px; }
+    .mob-slider .fa-long-arrow-right {
+      color: #242628; }
+  .mob-banner-content {
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    .mob-banner-content h1 {
+      margin-bottom: 20%; }
+    .mob-banner-content p {
+      font-size: 20px; }
+  .fa-long-arrow-down {
+    color: #fff;
+    font-size: 40px !important; }
+  .about-sec, .team-sec, .profile-sec {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .about-content {
+    margin-top: 5%; } }
+
+/*portrait - ipad*/
+/* Landscape -ipad */
+/* portrait -ipadPro */
+/* landscape -ipadPro */

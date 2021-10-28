@@ -1,0 +1,349 @@
+@charset 'utf-8';
+
+//Vendor
+@import "vendors/vendor-dir";
+
+//Helpers
+@import "helpers/helpers-dir";
+
+//Base Styles
+@import "base/base-dir";
+
+//Components
+@import "components/components-dir";
+
+//Layout
+@import "layout/layout-dir";
+
+//Pages
+@import "pages/pages-dir";
+
+
+
+
+@font-face { 
+font-family: iciel-gotham-medium-regular; 
+src: url(../fonts/iciel-gotham-medium-regular.otf); 
+font-weight: normal; 
+}
+body{
+  font-family: iciel-gotham-medium-regular;   
+}
+a,a:hover{
+    text-decoration: none;
+}
+
+body{
+    color: $black-color;
+}
+p{
+    line-height: $line-height-p;
+}
+//header
+.navbar-light .navbar-nav .nav-link{
+    font-size: $font-12;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header_area .container{
+ max-width: 1240px;
+}
+
+
+//Nesting css
+ .about-content{
+
+ 	 h6{
+ 	 	font-size: $font-12;
+        color: $light-blue;
+ 	 }
+ 	 h2{
+ 	 	font-size: $font-24;
+        margin-bottom: 4%;
+ 	 }
+ 	  p{
+ 	 	font-size: $font-12;
+ 	 }
+ 	 a{
+ 	 	font-size: $font-12;
+ 	 	background-color: $btn-bgcolor;
+ 	 	border: none;
+        color: $black-color;
+        padding: 10px 20px;
+
+      &:hover{
+        background-color: transparent;
+        border:1px solid #96EAE0;
+        color: $black-color;
+       }
+ 	 }
+ }
+
+
+
+ //
+ .about-sec, .team-sec, .profile-sec{
+    padding-top: $paddingY;
+    padding-bottom: $paddingY;
+ }
+
+//about css
+ .overlay-content{
+      
+    background-color: rgba(36,38,40,0.9);
+    padding:$padding-40; 
+    margin-top: -27%;
+
+      h6{
+        font-size: $font-12;
+        color: $light-blue;
+       }
+     h2{
+        font-size: $font-24;
+        color: #fff;
+        margin-bottom: 20px;
+     }
+      p{
+        font-size: $font-12;
+        color: $white-color;
+
+     }
+ }
+
+ .bg-img{
+    @include bgimg;
+    background-image: url(../images/about-slider-img.png);
+    height: 435px;
+ }
+ .member{
+
+       h4{
+        font-size: $font-16;
+        font-weight: normal;
+        margin-top: 25px;
+        margin-bottom: $marginY;
+       }
+       span{
+        font-size: $font-10;
+        @include common-code;
+       }
+       p{
+        font-size: $font-14;
+        margin-top: 25px;
+       }
+       a{
+        font-size: $font-12;
+        @include common-code;
+       }
+ }
+
+//profile start
+.arrow-btn{
+ background-color: $btn-bgcolor;
+ border-radius: 0px;  
+     i{
+       color: #000;
+     } 
+}
+.profile-img{
+    margin-top: -170px;
+}
+.member-row{
+    @include content_center(space-between,center);
+ 
+    ul{
+            display: flex;
+    list-style: none;
+    margin-bottom: 0px;
+    }
+    a{
+        border-right: 1px solid #707070;
+        padding: 0px 15px;
+    }
+    h4{
+        font-size:$font-24; 
+    }
+}
+
+.banner-content{
+      padding-right: 10%;
+  padding-left: 10%;  
+    padding-top: $paddingY;
+    padding-bottom: $paddingY;
+
+     h1{
+        font-size: $font-60;
+        color: $white-color;
+     }
+     p{
+        font-size: $font-20;
+        color:$white-color;
+            margin-top: 8%;
+     }
+}
+.service-box{
+    @include content_center(flex-start,center);
+    margin-bottom: 5%;
+
+    span{
+    font-size: $font-20; 
+    line-height: 22px; 
+    color:$white-color;
+    }
+    p{
+    font-size: $font-12; 
+    color:$white-color; 
+    margin-bottom: 0px;   
+    }
+    img{
+      margin-right: 10px;
+    }
+
+}
+.service-content .active span{
+    color: $light-blue;
+}
+ .service-content .active p{
+    color: $light-blue;
+ }
+.hide-img{
+    visibility: hidden;
+}
+
+.slider-img .left-col{
+    @include content_center(flex-start,center);
+}
+.slider-img{
+    @include bgimg;
+   background-image: url(../images/header.png);
+}
+.no-border{
+    border-right: none !important;
+}
+.mob-slider{
+      display: none;
+}
+.desktop-slider{
+    padding: 50px 0px;
+
+    hr{
+        border: 1px solid #fff;
+    }
+}
+.img-section{
+    padding-bottom: $paddingY;
+}
+
+
+
+/*Responsive start*/
+@media (max-width: 767px)
+{
+   .profile-img {
+    margin-top: 25px;
+    }
+    .desktop-slider{
+    display: none
+    }
+    //nested css
+    .mob-slider{
+      display: block;
+
+      span{
+        color: #000;
+      }
+      img{
+         margin-right: 31px;
+         width: 10%;
+      }
+      .right-icon{
+        position: absolute;
+        right: 15px;
+      }
+      .fa-long-arrow-right{
+        color: $black-color;
+      }
+
+    }
+    //nested css
+    .mob-banner-content{
+        color: #fff;
+        padding-top: $paddingY;
+        padding-bottom: $paddingY;
+        h1{
+          margin-bottom: 20%;
+        }
+        p{
+            font-size: $font-20;
+        }
+    }
+    //end
+    .fa-long-arrow-down{
+      color: $white-color;
+       font-size: 40px !important;
+    }
+     .about-sec, .team-sec, .profile-sec{
+    padding-top: 30px;
+    padding-bottom: 30px;
+ }
+ .about-content {
+    margin-top: 5%;
+ }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+}
+/*portrait - ipad*/
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1)
+{
+}
+/* Landscape -ipad */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2)
+{
+}
+/* portrait -ipadPro */
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2)
+{
+}
+/* landscape -ipadPro */
+@media only screen
+and (min-device-width: 1366px)
+and (max-device-width: 1366px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2)
+{
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px)
+{
+}
+@media (device-width: 2560px)
+{
+}
+@media (device-width: 4096px)
+{
+}
+@media (device-width: 5120px)
+{
+}
+@media (device-width: 2048px)
+{
+}
+@media (device-width: 1920px)
+{
+}
+
+
+

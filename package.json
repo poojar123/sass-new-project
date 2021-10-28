@@ -1,0 +1,17 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "sass project",
+  "main": "index.js",
+  "scripts": {
+     "compile-sass":"node-sass scss/style.scss css/style.css -w"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "pooja",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

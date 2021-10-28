@@ -1,0 +1,18 @@
+//mixins
+
+@mixin bgimg{
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin content_center($flex_val1,$flex_val2){
+   display: flex;
+   justify-content: $flex_val1;
+   align-items:$flex_val2 ;
+}
+@mixin common-code{
+    color: $light-blue;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+}
